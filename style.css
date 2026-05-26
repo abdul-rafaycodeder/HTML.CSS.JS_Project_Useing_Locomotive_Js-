@@ -154,3 +154,15 @@ nav.scrolled #nav-logo img {
     right: 0;
     top: 65vh;
 }
+
+/* Div Animation */
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    background-color: orangered;
+    border-radius: 50%;
+    right: 0;
+    top: 65vh;
+}
