@@ -120,8 +120,24 @@ nav.scrolled #nav-logo img {
 }
 
 #page1-left img {
-    width: 250px;
+    width: 300px;
     border-radius: 20px;
+    animation-name: anima3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes anima3 {
+    from {
+        transform: translate(-10%, -10%);
+    }
+
+    to {
+        transform: translate(10%, 10%);
+    }
 }
 
 #page1-left p {
@@ -178,7 +194,7 @@ nav.scrolled #nav-logo img {
     border-radius: 50%;
     filter: blur(20px);
     animation-name: anima2;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -193,7 +209,7 @@ nav.scrolled #nav-logo img {
     border-radius: 50%;
     filter: blur(20px);
     animation-name: anima1;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -209,6 +225,8 @@ nav.scrolled #nav-logo img {
     }
 }
 
+
+
 @keyframes anima2 {
     from {
         transform: translate(20%, -5%);
@@ -219,5 +237,38 @@ nav.scrolled #nav-logo img {
     }
 }
 
-/* Video */
+/* Video Section Base */
+.video-section {
+    position: relative;
+    z-index: 10;
+    padding: 40px 50px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+    /* smooth easing */
+}
 
+/* Revealed state – add this class via JavaScript to animate in */
+.video-section.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Video element styling */
+.video-section video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Optional responsive tweaks */
+@media (max-width: 768px) {
+    .video-section {
+        padding: 30px 20px;
+    }
+
+    .video-section video {
+        border-radius: 12px;
+    }
+}
