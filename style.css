@@ -147,13 +147,6 @@ nav.scrolled #nav-logo img {
     letter-spacing: -5px;
 }
 
-#hero-shape {
-    position: absolute;
-    width: 46vw;
-    height: 36vw;
-    right: 0;
-    top: 65vh;
-}
 
 /* Div Animation */
 
@@ -161,8 +154,70 @@ nav.scrolled #nav-logo img {
     position: absolute;
     width: 46vw;
     height: 36vw;
-    background-color: orangered;
-    border-radius: 50%;
+
     right: 0;
     top: 65vh;
+    /* filter: blur(20px); */
 }
+
+#hero-1 {
+    background: linear-gradient(#FE340A, #fe330aee);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero-2 {
+    background: linear-gradient(#FE340A, #fe700aee);
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anima2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+#hero-3 {
+    background: linear-gradient(#FE340A, #dc3a19);
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anima1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anima1 {
+    from {
+        transform: translate(-10%, -10%);
+    }
+
+    to {
+        transform: translate(10%, 10%);
+    }
+}
+
+@keyframes anima2 {
+    from {
+        transform: translate(20%, -5%);
+    }
+
+    to {
+        transform: translate(-10%, 10%);
+    }
+}
+
+/* Video */
+
