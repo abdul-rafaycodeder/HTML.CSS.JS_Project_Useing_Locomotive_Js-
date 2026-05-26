@@ -9,6 +9,8 @@ body {
     background-color: #EFEAE3;
 }
 
+/* Navbar */
+
 nav {
     display: flex;
     align-items: center;
@@ -41,4 +43,12 @@ nav {
     text-decoration: none;
     color: black;
     align-items: center;
+}
+
+/* Hero */
+
+#page1 {}
+
+#page1-left img{
+    width: 400px;
 }
