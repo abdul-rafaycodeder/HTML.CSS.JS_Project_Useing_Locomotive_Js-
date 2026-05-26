@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML CSS JAVASCRIPT, Project</title>
+    <title>Sundown Studio | Spaces That Inspire</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+    <!-- Loading Screen with Stairs Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="stairs-container">
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+            <div class="stair-block"></div>
+        </div>
+        <p class="loading-text">Loading Experience</p>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div id="mainWrapper">
         <!-- Navbar -->
-        <nav>
+        <nav id="navbar">
             <div id="nav-logo">
-                <img src="./images/64d3dd9edfb41666c35b15c2_Sundown logo.svg" alt="">
+                <img src="./images/64d3dd9edfb41666c35b15c2_Sundown logo.svg" alt="Sundown Logo">
             </div>
             <div id="nav-links">
                 <a href="#"><li>Work</li></a>
@@ -22,31 +42,85 @@
                 <a href="#"><li>Contact</li></a>
             </div>
         </nav>
-        <!-- Hero -->
+
+        <!-- Hero Section -->
         <div id="page1">
             <div id="page1-left">
-                <img src="./images/rafay.jpeg" alt="">
-                <p>Sundown is a multi-disciplinary <br> studio focused on creating <br> unique, end-to-end experiences
-                    <br> and
-                    environments.
+                <img src="./images/rafay.jpeg" alt="Portrait">
+                <p>
+                    Sundown is a multi-disciplinary <br>
+                    studio focused on creating <br>
+                    unique, end-to-end experiences <br>
+                    and environments.
                 </p>
             </div>
             <div id="page1-right">
-                <h1>SPACES <br> <span id="that">THAT</span> <br> <span id="INSPIRE">INSPIRE</span> </h1>
+                <h1 id="heroHeading">
+                    SPACES <br>
+                    <span id="that">THAT</span> <br>
+                    <span id="INSPIRE">INSPIRE</span>
+                </h1>
             </div>
         </div>
 
-
+        <!-- Hero Shapes -->
         <div id="hero-shape">
             <div id="hero1"></div>
             <div id="hero2"></div>
-            <div id="hero2"></div>
+            <div id="hero3"></div>
         </div>
-        <!-- <video autoplay loop muted src="./videos/video.mp4"></video> -->
+
+        <!-- Video Section -->
+        <div class="video-section" id="videoSection">
+            <video autoplay loop muted playsinline
+            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='400'%3E%3Crect fill='%23ddd' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='20'%3EVideo Placeholder%3C/text%3E%3C/svg%3E">
+            <source src="./videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
+    <!-- Stairs Showcase Section -->
+    <div class="stairs-showcase" id="stairsShowcase">
+        <h2>Our Process</h2>
+        <div class="stairs-visual">
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+            <div class="stairs-step"></div>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Work Section -->
+    <div class="work-section" id="workSection">
+        <h2>Selected Work</h2>
+        <div class="work-cards">
+            <div class="work-card">
+                <h3>✦ Brand Identity</h3>
+                <p>Crafting unique visual languages that resonate with audiences worldwide.</p>
+            </div>
+            <div class="work-card">
+                <h3>✦ Digital Experiences</h3>
+                <p>Immersive web & mobile experiences built with cutting-edge technology.</p>
+            </div>
+            <div class="work-card">
+                <h3>✦ Environmental Design</h3>
+                <p>Transforming physical spaces into memorable brand touchpoints.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sundown Studio. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>

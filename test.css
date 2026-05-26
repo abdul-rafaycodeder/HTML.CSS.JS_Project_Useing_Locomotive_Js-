@@ -34,22 +34,22 @@ body {
 
 @keyframes anima {
     from {
-        transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%) skew(-10);
     }
 
     to {
-        transform: translate(10%, 10%);
+        transform: translate(10%, 10%) skew(10deg);
     }
 
 }
 
 @keyframes anima2 {
     from {
-        transform: translate(10%, 10%);
+        transform: translate(10%, 10%) skew(-10);
     }
 
     to {
-        transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%) skew(10deg);
     }
 
 }
