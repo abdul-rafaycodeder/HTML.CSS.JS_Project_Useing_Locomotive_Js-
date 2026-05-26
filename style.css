@@ -272,3 +272,16 @@ nav.scrolled #nav-logo img {
         border-radius: 12px;
     }
 }
+
+/* marquee */
+
+#rafay {
+    color: red;
+  font-size: 80px;
+
+}
+
+#marquee-h1 {
+    font-size: 100px;
+}
+
