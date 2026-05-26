@@ -8,3 +8,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.15 });
 observer.observe(videoSection);
+
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });

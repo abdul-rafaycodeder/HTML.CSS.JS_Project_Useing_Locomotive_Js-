@@ -310,3 +310,28 @@ nav.scrolled #nav-logo img {
 #marquee-h1 {
     font-size: 100px;
 }
+
+/* Page 2 */
+
+#page2 {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#page2-left h3{
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+#page2-right img{
+    width: 230px;
+    border-radius: 20px;
+}
+
+#check2 p{
+    width: 255px;
+}
