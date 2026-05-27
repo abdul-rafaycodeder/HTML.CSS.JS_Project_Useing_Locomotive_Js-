@@ -286,6 +286,21 @@ nav.scrolled #nav-logo img {
     border-radius: 20px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
     display: block;
+    animation-name: anima5;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anima5 {
+    from {
+        transform: translate(-1%, -1%) skew(1deg);
+    }
+
+    to {
+        transform: translate(1%, 1%) skew(-1deg);
+    }
 }
 
 /* Optional responsive tweaks */
@@ -314,24 +329,89 @@ nav.scrolled #nav-logo img {
 /* Page 2 */
 
 #page2 {
+    height: 100vh;
     margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 50px;
+    position: relative;
 }
 
-#page2-left h3{
+#page2-left h3 {
     font-size: 43px;
     font-weight: 700;
     line-height: 45px;
 }
 
-#page2-right img{
+#page2-left {
+    position: relative;
+    z-index: 9;
+}
+
+#page2-right img {
     width: 230px;
     border-radius: 20px;
 }
 
-#check2 p{
+#check2 p {
     width: 255px;
+}
+
+#page2 #gooey {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #dc3a19, #fe7c0a);
+    top: 40%;
+    left: 20%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#page2 #gooey {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #dc3a19, #fe7c0a);
+    top: 50%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: gooey2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gooey {
+    from {
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        transform: translate(-10%, 10%) skew(10deg);
+    }
+}
+
+@keyframes gooey2 {
+    from {
+        transform: translate(-10%, 10%) skew(10deg);
+    }
+
+    to {
+        transform: translate(10%, -10%) skew(0);
+    }
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }
