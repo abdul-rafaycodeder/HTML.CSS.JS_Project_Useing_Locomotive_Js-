@@ -350,6 +350,12 @@ nav.scrolled #nav-logo img {
     z-index: 9;
 }
 
+#page2-right{
+    position: relative;
+    z-index: 9;
+}
+
+
 #page2-right img {
     width: 230px;
     border-radius: 20px;
