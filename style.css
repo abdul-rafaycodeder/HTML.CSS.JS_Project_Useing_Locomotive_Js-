@@ -393,7 +393,7 @@ nav.scrolled #nav-logo img {
 
 @keyframes gooey {
     from {
-        transform: translate(10%, -10%) skew(30deg);
+        transform: translate(10%, -10%) skew(100deg);
     }
 
     to {
