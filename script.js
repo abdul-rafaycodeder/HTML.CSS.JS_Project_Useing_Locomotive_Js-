@@ -10,7 +10,9 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(videoSection);
 
 
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#main'),
-//     smooth: true
-// });
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+
