@@ -437,24 +437,43 @@ nav.scrolled #nav-logo img {
     border-bottom: 1px solid gray;
 }
 
-.elem h2{
+.elem h2 {
     font-size: 3vw;
     z-index: 2;
 }
 
-.elem .overlay{
+.elem .overlay {
     height: 100%;
     width: 100%;
     background-color: orange;
     position: absolute;
     left: 0;
     top: -100%;
- 
-    transition: all ease-in-out 0.3s ;
+
+    transition: all ease-in-out 0.3s;
 }
 
-.elem:hover .overlay{
+.elem:hover .overlay {
     top: 0;
-        border-radius: 0px;
+    border-radius: 0px;
 
- }
+}
+
+#elem-container {
+
+
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 20vw;
+    /* background-color: red; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 30%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
