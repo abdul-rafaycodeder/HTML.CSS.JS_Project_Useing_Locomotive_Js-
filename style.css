@@ -329,9 +329,9 @@ nav.scrolled #nav-logo img {
 /* Page 2 */
 
 #page2 {
-    width: 125vw;
+    width: 100%;
     height: 100vh;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -350,9 +350,10 @@ nav.scrolled #nav-logo img {
     z-index: 9;
 }
 
-#page2-right{
-    position: relative;
-    z-index: 9;
+#page2-right {
+    /* position: relative; */
+    /* z-index: 9; */
+    margin-left: 20vw;
 }
 
 
@@ -399,7 +400,7 @@ nav.scrolled #nav-logo img {
 
 @keyframes gooey {
     from {
-        transform: translate(10%, -10%) skew(100deg);
+        transform: translate(10%, -10%) skew(10deg);
     }
 
     to {
@@ -409,11 +410,11 @@ nav.scrolled #nav-logo img {
 
 @keyframes gooey2 {
     from {
-        transform: translate(-10%, 10%) skew(30deg);
+        transform: translate(-10%, 10%) skew(0);
     }
 
     to {
-        transform: translate(10%, -10%) skew(200deg);
+        transform: translate(10%, -10%) skew(10deg);
     }
 }
 
@@ -422,3 +423,38 @@ nav.scrolled #nav-logo img {
     width: 100%;
     background-color: #EFEAE3;
 }
+
+/* Page 3 */
+
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    border-bottom: 1px solid gray;
+}
+
+.elem h2{
+    font-size: 3vw;
+    z-index: 2;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+ 
+    transition: all ease-in-out 0.3s ;
+}
+
+.elem:hover .overlay{
+    top: 0;
+        border-radius: 0px;
+
+ }
