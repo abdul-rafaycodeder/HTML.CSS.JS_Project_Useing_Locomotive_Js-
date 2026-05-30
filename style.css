@@ -459,15 +459,10 @@ nav.scrolled #nav-logo img {
 
 }
 
-#elem-container {
-
-
-}
 
 #fixed-image{
-    height: 30vw;
-    width: 20vw;
-    /* background-color: red; */
+    height: 29vw;
+    width: 23vw;
     border-radius: 10px;
     position: fixed;
     z-index: 99;
@@ -477,3 +472,22 @@ nav.scrolled #nav-logo img {
     background-size: cover;
     background-position: center;
 }
+
+/* page 4 */
+
+#page4{
+    border-radius: 20px;
+    height: 100vh;
+    width: 95%;
+    margin: 25vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    color: white;
+}
+
+#page4-left{
+    margin-left: 15px;
+}
+
